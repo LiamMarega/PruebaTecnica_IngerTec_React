@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Carrusel() {
   return (
-    <div>
+    <div id="home">
       <Carousel fade>
         <Carousel.Item>
           <img

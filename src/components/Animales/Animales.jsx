@@ -46,7 +46,7 @@ function Animales() {
 
 
   return (
-    <Container className="ContainerAnimales" fluid="xl">
+    <Container id="AnimalesId" className="ContainerAnimales" fluid="xl">
 
       <ModalElefante
         show={modalElefanteShow}

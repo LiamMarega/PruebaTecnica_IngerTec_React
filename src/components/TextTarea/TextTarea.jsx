@@ -17,7 +17,7 @@ function TextTarea() {
       console.log("CONTADOR", contador);
 
   return (
-    <Container fluid className='BodyTextTarea'>
+    <Container id="TextoId" fluid className='BodyTextTarea'>
         <div className="CenterTextTarea">
             <textarea name="textTarea" id="TextTareaAjax" placeholder={contador?.texto}></textarea>
             <br />

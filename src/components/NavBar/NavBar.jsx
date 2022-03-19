@@ -32,8 +32,8 @@ function ScrollNavBar() {
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#features">Animales</Nav.Link>
-            <Nav.Link href="#pricing">Texto</Nav.Link>
+            <Nav.Link href="#AnimalesId">Animales</Nav.Link>
+            <Nav.Link href="#TextoId">Texto</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
