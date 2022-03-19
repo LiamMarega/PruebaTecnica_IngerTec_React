@@ -10,10 +10,10 @@ export function sumaContador(animal) {
 };
 
 export function TraerTexto() {
-  return async (dispatch) => {
+  return async (dispatch, getState) => {
     try {
-      const json = await axios.get("../../../home.json");
-      console.log(json);
+      const json = await axios.get('https://jsonplaceholder.typicode.com/comments/4');
+
       return dispatch({
         type: "TEXTO",
         data: json.data,
@@ -53,18 +53,3 @@ export function TraerTexto() {
                                       ░░░░░░░░░░░░░░░██▓▓▓▓▓██▓▒
                                       ░░░░░░░░░░░░░░░░░█▓▓██▓▒
                                       ░░░░░░░░░░░░░░░░░░░█▓▒ */
-
-//  export function getCapSimp() {
-//   return async (dispatch) => {
-//     try {
-//       const json = await axios.get(``);
-//       return dispatch({
-//         type: GET_CAPITULOS_THESIMPSONS,
-//         payload: json.data,
-
-//       });
-//     } catch (e) {
-//       console.log(e);
-//     }
-//   };
-// }

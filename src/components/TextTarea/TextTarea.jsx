@@ -1,31 +1,37 @@
-import React from 'react'
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { TraerTexto } from "../../store/actions";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import "./TextTarea.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from "react-bootstrap";
+import "./TextTarea.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //Axios
 function TextTarea() {
-    const contador = useSelector((state) => state?.texto);
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const textoTextTarea = useSelector((state) => state);
 
-    function handleClick() {
-        dispatch(TraerTexto());
-      }
+  function handleClick() {
+    dispatch(TraerTexto());
+  }
 
 
   return (
-    <Container id="TextoId" fluid className='BodyTextTarea'>
-        <div className="CenterTextTarea">
-            <textarea name="textTarea" id="TextTareaAjax" placeholder={contador?.texto}></textarea>
-            <br />
-            <div className="ContainerButton">
-            <button className='ButtonTextTarea' onClick={() => handleClick()}>OBTENER TEXTO</button>
-            </div>
+    <Container id="TextoId" fluid className="BodyTextTarea">
+      <div className="CenterTextTarea">
+        <textarea
+          name="textTarea"
+          id="TextTareaAjax"
+          value={textoTextTarea?.texto.body}
+        ></textarea>
+        <br />
+        <div className="ContainerButton">
+          <button className="ButtonTextTarea" onClick={() => handleClick()}>
+            OBTENER TEXTO
+          </button>
         </div>
+      </div>
     </Container>
-  )
+  );
 }
 
-export default TextTarea
+export default TextTarea;

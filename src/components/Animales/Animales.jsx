@@ -46,7 +46,6 @@ function Animales() {
     window.open(`/popup/${e.target.name}`, "PopUp", configuracion_ventana);
   }
 
-/*   console.log(contador); */
 
 
   return (

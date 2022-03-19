@@ -56,6 +56,7 @@ export default function reducer(state = initialState, action) {
       };
 
     case "TEXTO":
+    
       return {
         ...state,
         texto: action.data,

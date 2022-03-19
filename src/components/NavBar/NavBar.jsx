@@ -17,7 +17,7 @@ function ScrollNavBar() {
     }
   };
   
-  console.log(screen.width);
+
   window.addEventListener("scroll", changeBackground);
 
   return (

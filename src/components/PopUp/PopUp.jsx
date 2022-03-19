@@ -17,7 +17,7 @@ function PopUp(e) {
   //Mandar la accion
   function handleClick(e) {
     dispatch(sumaContador(e.target.name));
-    console.log(contador);
+
   }
 
   function handleClickClose() {
