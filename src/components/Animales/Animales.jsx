@@ -17,16 +17,19 @@ function Animales() {
   const contador = useSelector((state) => state);
 
   useEffect(() => {
-
-  console.log("nassss",contador?.conejo);
-  console.log("nassss",contador);
-
-  }, );
+    init()
+  }, []);
   
+  function init() {
+    dispatch(sumaContador("init"))
+    
+  }
+ 
+/* 
   function handleClick(e) {
     dispatch(sumaContador(e.target.name))
    setModalShow(true);
-  }
+  } */
 
   function handleClickModalElefante(e) {
     dispatch(sumaContador(e.target.name))
@@ -40,9 +43,10 @@ function Animales() {
 
   function popUp(e) {
     var configuracion_ventana = "width=800, height=400";
-    window.open(`/popup/${e.target.name}`, "Pagina_CNN", configuracion_ventana);
+    window.open(`/popup/${e.target.name}`, "PopUp", configuracion_ventana);
   }
 
+/*   console.log(contador); */
 
 
   return (
