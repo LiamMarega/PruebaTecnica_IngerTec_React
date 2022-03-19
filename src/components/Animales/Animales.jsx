@@ -70,7 +70,7 @@ function Animales() {
             name="conejo"
             onClick={(e) => popUp(e)}
             fluid
-            src={imgGallo}
+            src={imgConejo}
           />
           <div className="TextoAnimales">
             <h3>Conejo</h3>
