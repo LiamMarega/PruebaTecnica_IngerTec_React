@@ -7,11 +7,7 @@ import ModalElefante from "../Modal/ModalElefante.jsx"
 import ModalLeon from "../Modal/ModalLeon.jsx"
 import "./Animales.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import imgConejo from "../../images/ANIMALES_SVG/conejo.svg"
-import imgElefante from "../../images/ANIMALES_SVG/elefante.svg"
-import imgGallo from "../../images/ANIMALES_SVG/gallo.svg"
-import imgLeon from "../../images/ANIMALES_SVG/leon.svg"
-import imgPanda from "../../images/ANIMALES_SVG/panda.svg"
+
 
 
 function Animales() {
@@ -50,6 +46,7 @@ function Animales() {
     window.open(`/popup/${e.target.name}`, "PopUp", configuracion_ventana);
   }
 
+/*   console.log(contador); */
 
 
   return (
@@ -70,7 +67,7 @@ function Animales() {
             name="conejo"
             onClick={(e) => popUp(e)}
             fluid
-            src={imgConejo}
+            src="../../../images/ANIMALES_SVG/conejo.svg"
           />
           <div className="TextoAnimales">
             <h3>Conejo</h3>
@@ -87,7 +84,7 @@ function Animales() {
             onClick={(e) => handleClickModalElefante(e)}
             name="elefante"
             fluid
-            src={imgElefante}
+            src="../../../images/ANIMALES_SVG/elefante.svg"
           />
           <div className="TextoAnimales">
             <h3>Elefante</h3>
@@ -104,7 +101,7 @@ function Animales() {
             onClick={(e) => popUp(e)}
             name="gallo"
             fluid
-            src={imgGallo}
+            src="../../../images/ANIMALES_SVG/gallo.svg"
           />
           <div className="TextoAnimales">
             <h3>Gallo</h3>
@@ -123,7 +120,7 @@ function Animales() {
             }}
             name="leon"
             fluid
-            src={imgLeon}
+            src="../../../images/ANIMALES_SVG/leon.svg"
           />
           <div className="TextoAnimales">
           <h3>Leon</h3>
@@ -140,7 +137,7 @@ function Animales() {
             onClick={(e) => popUp(e)}
             name="panda"
             fluid
-            src={imgPanda}
+            src="../../../images/ANIMALES_SVG/panda.svg"
           />
           <div className="TextoAnimales">
           <h3>Panda</h3>

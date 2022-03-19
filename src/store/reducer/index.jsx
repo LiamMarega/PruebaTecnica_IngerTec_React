@@ -4,7 +4,7 @@ const initialState = {
   gallo: JSON.parse(localStorage.getItem("gallo")) || 0,
   leon: JSON.parse(localStorage.getItem("leon")) || 0,
   panda: JSON.parse(localStorage.getItem("panda")) || 0,
-  texto: "",
+  texto: {},
   init: 0,
 };
 

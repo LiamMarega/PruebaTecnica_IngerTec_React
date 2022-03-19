@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { sumaContador } from "../../store/actions";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import {  Image } from "react-bootstrap";
 import "./PopUp.css"
 
 
@@ -17,7 +17,7 @@ function PopUp(e) {
   //Mandar la accion
   function handleClick(e) {
     dispatch(sumaContador(e.target.name));
-
+    console.log(contador);
   }
 
   function handleClickClose() {
@@ -37,12 +37,6 @@ function PopUp(e) {
       </div>
     );
 
-
-  return (
-    <div>
-      <h1>NASHEEE</h1>
-    </div>
-  );
 }
 
 export default PopUp;
