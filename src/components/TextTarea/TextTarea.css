@@ -1,0 +1,57 @@
+.BodyTextTarea{
+    padding-top: 50px;
+    height: 50vh;
+}
+
+.BodyTextTarea .CenterTextTarea{
+   width: 100%;
+}
+
+
+.BodyTextTarea #TextTareaAjax {
+    background-color: #7ed957;
+    border-radius: 30px;
+    resize: none;
+    height: 50%;
+    width: 100%;
+    margin: 10px;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+ .BodyTextTarea #TextTareaAjax::placeholder {
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 20px;
+  }
+
+  .BodyTextTarea .ContainerButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* From cssbuttons.io by @adamgiebl */
+.ButtonTextTarea {
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+ }
+ 
+ .ButtonTextTarea:hover, .ButtonTextTarea:active {
+  -webkit-transform: translate(0px,5px);
+  -ms-transform: translate(0px,5px);
+  transform: translate(0px,5px);
+  border-bottom: 1px solid #2ecc71;
+ }

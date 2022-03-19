@@ -1,0 +1,38 @@
+.ContainerFooter{
+    background: #000000;
+    height: 10vh;
+}
+
+.LandingPage__Container_Row_Footer {
+
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+
+.LandingPage__Container_Row_Footer a {
+
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+
+  }
+
+  .LandingPage__Container_Row_Footer a:hover {
+
+    text-decoration: none;
+    color: #7ED957;
+
+  }
+  
+
+  
+  .FooterList {
+    list-style: none;
+ 
+  }

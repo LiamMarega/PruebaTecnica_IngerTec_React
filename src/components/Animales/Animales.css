@@ -1,0 +1,22 @@
+.ContainerAnimales {
+  padding: 15px;
+  
+}
+
+.ContainerAnimales .col {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.ContainerAnimales .col:hover {
+  transform: scale(1.05);
+}
+
+.ContainerAnimales .TextoAnimales {
+  height: 40%;
+  display: inline-block;
+}
+
+.ContainerAnimales h5 {
+  margin-bottom: 300px;
+}
