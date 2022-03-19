@@ -1,7 +1,7 @@
 import axios from 'axios'
 
+
 export function sumaContador(animal) {
- 
 
       return {
         type: animal,
@@ -12,8 +12,8 @@ export function sumaContador(animal) {
 export function TraerTexto() {
   return async (dispatch) => {
     try {
-      const json = await axios.get("../../../home.json");
-      console.log(json);
+      const json = await axios.get("../src/JSON/home.json");
+
       return dispatch({
         type: "TEXTO",
         data: json.data,

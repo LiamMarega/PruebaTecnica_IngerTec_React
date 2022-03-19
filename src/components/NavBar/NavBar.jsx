@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Image } from "react-bootstrap";
+import imgLogo from "../../images/logoingertec.png"
 import "./NavBar.css";
 function ScrollNavBar() {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
@@ -17,7 +18,7 @@ function ScrollNavBar() {
     }
   };
   
-  console.log(screen.width);
+
   window.addEventListener("scroll", changeBackground);
 
   return (
@@ -28,7 +29,7 @@ function ScrollNavBar() {
           fluid={+true}
         >
           <Navbar.Brand href="#home">
-            <Image fluid src="../../images/logo-ingertec.png" />
+            <Image fluid src={imgLogo} />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>

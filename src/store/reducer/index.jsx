@@ -49,7 +49,7 @@ export default function reducer(state = initialState, action) {
 
     
     case "init":
-      console.log("INITII");
+
       return {
         ...state,
         init: state.init + 1,

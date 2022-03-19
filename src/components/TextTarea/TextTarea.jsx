@@ -13,8 +13,7 @@ function TextTarea() {
     function handleClick() {
         dispatch(TraerTexto());
       }
-    
-      console.log("CONTADOR", contador);
+
 
   return (
     <Container id="TextoId" fluid className='BodyTextTarea'>

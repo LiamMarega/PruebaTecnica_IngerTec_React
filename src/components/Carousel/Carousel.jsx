@@ -1,6 +1,9 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import img1 from "../../images/1.svg"
+import img2 from "../../images/2.svg"
+import img3 from "../../images/3.svg"
 
 function Carrusel() {
   return (
@@ -9,7 +12,7 @@ function Carrusel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../../../images/1.svg"
+            src={img1}
             alt="First slide"
           />
           
@@ -17,7 +20,7 @@ function Carrusel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../../../images/2.svg"
+            src={img2}
             alt="Second slide"
           />
 
@@ -26,7 +29,7 @@ function Carrusel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../../../images/3.svg"
+            src={img3}
             alt="Third slide"
           />
 
