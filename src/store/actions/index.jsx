@@ -12,7 +12,7 @@ export function sumaContador(animal) {
 export function TraerTexto() {
   return async (dispatch) => {
     try {
-      const json = await axios.get('./src/components/JSON/home.json');
+      const json = await axios.get('/src/components/JSON/home.json');
 
       return dispatch({
         type: "TEXTO",
