@@ -3,7 +3,7 @@ import Home from './components/Home/Home';
 import LandingPage from './components/LandingPage/LandingPage';
 import PopUp from './components/PopUp/PopUp';
 import './App.css'
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -11,11 +11,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        
-          <Route path="/" element={<Home />} />
-          <Route exact path="/home" element={<LandingPage />} />
-          <Route exact path="/hola" element={<LandingPage />} />
-
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/popup/:animal" element={<PopUp />} />
+        </Routes>
       </div>
     </BrowserRouter>
   )
