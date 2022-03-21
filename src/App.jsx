@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/home/popup/:animal" element={<PopUp />} />
+          <Route path="/popup" element={<LandingPage />} />
         </Routes>
       </div>
     </BrowserRouter>
