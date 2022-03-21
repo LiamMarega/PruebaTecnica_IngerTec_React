@@ -6,15 +6,15 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route exact path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/popup/:animal" element={<PopUp />} />
+          <Route path="/home/popup/:animal" element={<PopUp />} />
         </Routes>
       </div>
     </BrowserRouter>

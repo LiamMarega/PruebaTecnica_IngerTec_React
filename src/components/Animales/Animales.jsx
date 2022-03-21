@@ -48,7 +48,7 @@ function Animales() {
 
   function popUp(e) {
     var configuracion_ventana = "width=800, height=400";
-    window.open(`/popup/${e.target.name}`, "PopUp", configuracion_ventana);
+    window.open(`/home/popup/${e.target.name}`, "popup", configuracion_ventana);
   }
 
 
