@@ -12,10 +12,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route exact path="/" element={<LandingPage />} />
+          <Route path="/" element={<Home />} />
+          <Route exact path="/home" element={<LandingPage />} />
           <Route exact path="/hola" element={<LandingPage />} />
-          <Route path="/home" element={<Home />} />
-          
         </Routes>
       </div>
     </BrowserRouter>
