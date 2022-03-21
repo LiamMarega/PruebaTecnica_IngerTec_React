@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Nav, Image } from "react-bootstrap";
 import "./NavBar.css";
 
-import LogoIngerTect from "../../../images/logo.png"
-
+import LogoIngerTect from "../../../images/logo.png";
 
 function ScrollNavBar() {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
@@ -20,17 +19,13 @@ function ScrollNavBar() {
       setNavBarBackgorund(false);
     }
   };
-  
 
   window.addEventListener("scroll", changeBackground);
 
   return (
     <div>
       <Navbar fixed="top" bg="dark" variant="dark">
-        <Container
-       
-          fluid={+true}
-        >
+        <Container fluid={+true}>
           <Navbar.Brand href="#home">
             <Image fluid src={LogoIngerTect} />
           </Navbar.Brand>

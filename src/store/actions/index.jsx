@@ -10,7 +10,7 @@ export function sumaContador(animal) {
 };
 
 export function TraerTexto() {
-  return async (dispatch, getState) => {
+  return async (dispatch) => {
     try {
       const json = await axios.get('https://jsonplaceholder.typicode.com/comments/4');
 

@@ -14,7 +14,6 @@ function TextTarea() {
     dispatch(TraerTexto());
   }
 
-
   return (
     <Container id="TextoId" fluid className="BodyTextTarea">
       <div className="CenterTextTarea">
